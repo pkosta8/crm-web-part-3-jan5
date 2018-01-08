@@ -1,0 +1,15 @@
+<!--  yield from crb display_contacts.erb  -->
+<table>
+
+
+<div class="show_contact">There are <strong><%= @all_contacts.count -%></strong> contacts</div>
+
+  <% @all_contacts.each do |contact| %>
+
+  <div class="contact">
+    <h2><%= contact.full_name -%> <%= contact.email -%></h2>
+    <p> <a href="insert link here">Edit</a> | <a href="insert link here">Delete</a> </p>
+  </div>
+
+<% end %>
+</table>
